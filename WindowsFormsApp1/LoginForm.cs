@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
                 {
                     con.Open();
 
-                    // Select LoginId and Role instead of COUNT(*) tt
+                    // Select LoginId and Role instead of COUNT(*) 
                     string query = @"
                 SELECT L.LoginId, L.Role, S.Status 
                 FROM Login L
