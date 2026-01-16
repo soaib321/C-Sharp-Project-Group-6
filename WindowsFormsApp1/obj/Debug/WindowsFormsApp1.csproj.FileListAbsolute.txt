@@ -1,0 +1,109 @@
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserRegistrationForm.resources
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoleSelectionForm.resources
+C:\Users\Tonni\OneDrive\Desktop\My Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffRegistrationForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoleSelectionForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffRegistrationForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserRegistrationForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAccounts.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAdminDashboard.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmChangePass.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmServices.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmShowAdmins.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmStaffManagement.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmUserManagement.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\C# project\Tonni\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmViewReq.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAccounts.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAdminDashboard.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmChangePass.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmServices.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmShowAdmins.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmStaffManagement.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmUserManagement.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmViewReq.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoleSelectionForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffRegistrationForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserRegistrationForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAccounts.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAdminDashboard.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmChangePass.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmServices.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmShowAdmins.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmStaffManagement.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmUserManagement.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmViewReq.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoleSelectionForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffRegistrationForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserRegistrationForm.resources
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Tonni\OneDrive\Desktop\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAccounts.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmAdminDashboard.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmChangePass.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmServices.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmShowAdmins.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmStaffManagement.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmUserManagement.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmViewReq.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoleSelectionForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LoginForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StaffRegistrationForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserRegistrationForm.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.allreq.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.cleanreq.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pesreq.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.staffdashboard.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.staffprofile.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Userdashboard.resources
+C:\Users\Hp\OneDrive - American International University-Bangladesh\Documents\Fall 2025\C Sharp\Updated project\WindowsFormsApp1 - Design 1\WindowsFormsApp1 - copy 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.wastereq.resources

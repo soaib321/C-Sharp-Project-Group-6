@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6310D8FA-1694-48FA-95A3-572060209CD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allreq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allreq.Designer.cs">
+      <DependentUpon>allreq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cleanreq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cleanreq.Designer.cs">
+      <DependentUpon>cleanreq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccounts.Designer.cs">
+      <DependentUpon>FrmAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminDashboard.Designer.cs">
+      <DependentUpon>FrmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangePass.Designer.cs">
+      <DependentUpon>FrmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServices.Designer.cs">
+      <DependentUpon>FrmServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowAdmins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowAdmins.Designer.cs">
+      <DependentUpon>FrmShowAdmins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffManagement.Designer.cs">
+      <DependentUpon>FrmStaffManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserManagement.Designer.cs">
+      <DependentUpon>FrmUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewReq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewReq.Designer.cs">
+      <DependentUpon>FrmViewReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pesreq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesreq.Designer.cs">
+      <DependentUpon>pesreq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleSelectionForm.Designer.cs">
+      <DependentUpon>RoleSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="staffdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffdashboard.Designer.cs">
+      <DependentUpon>staffdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffprofile.Designer.cs">
+      <DependentUpon>staffprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegistrationForm.Designer.cs">
+      <DependentUpon>StaffRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userdashboard.Designer.cs">
+      <DependentUpon>Userdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistrationForm.Designer.cs">
+      <DependentUpon>UserRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wastereq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wastereq.Designer.cs">
+      <DependentUpon>wastereq.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="allreq.resx">
+      <DependentUpon>allreq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cleanreq.resx">
+      <DependentUpon>cleanreq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccounts.resx">
+      <DependentUpon>FrmAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminDashboard.resx">
+      <DependentUpon>FrmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangePass.resx">
+      <DependentUpon>FrmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServices.resx">
+      <DependentUpon>FrmServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowAdmins.resx">
+      <DependentUpon>FrmShowAdmins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffManagement.resx">
+      <DependentUpon>FrmStaffManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserManagement.resx">
+      <DependentUpon>FrmUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewReq.resx">
+      <DependentUpon>FrmViewReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesreq.resx">
+      <DependentUpon>pesreq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleSelectionForm.resx">
+      <DependentUpon>RoleSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="staffdashboard.resx">
+      <DependentUpon>staffdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffprofile.resx">
+      <DependentUpon>staffprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegistrationForm.resx">
+      <DependentUpon>StaffRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userdashboard.resx">
+      <DependentUpon>Userdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistrationForm.resx">
+      <DependentUpon>UserRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wastereq.resx">
+      <DependentUpon>wastereq.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\role user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\role staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff regi icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user regi icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\promote icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage user icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change password icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view admins icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin db background icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage staff1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage user icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass change background.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
