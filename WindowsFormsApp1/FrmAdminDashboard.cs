@@ -63,31 +63,36 @@ namespace WindowsFormsApp1
 
         private void accountBtn_Click(object sender, EventArgs e)
         {
-           FrmAccounts frmAccounts = new FrmAccounts();
+           this.Close();
+           FrmAccounts frmAccounts = new FrmAccounts(loginId);
            frmAccounts.Show();
         }
 
         private void serviceBtn_Click(object sender, EventArgs e)
         {
-            FrmServices frmServices = new FrmServices();
+            this.Close();
+            FrmServices frmServices = new FrmServices(loginId);
             frmServices.Show();
         }
 
         private void mngUserBtn_Click(object sender, EventArgs e)
         {
-            FrmUserManagement frmUserManagement = new FrmUserManagement();
+            this.Close();
+            FrmUserManagement frmUserManagement = new FrmUserManagement(loginId);
             frmUserManagement.Show();
         }
 
         private void mngStaffBtn_Click(object sender, EventArgs e)
         {
-            FrmStaffManagement frmStaffManagement = new FrmStaffManagement();
+            this.Close();
+            FrmStaffManagement frmStaffManagement = new FrmStaffManagement(loginId);
             frmStaffManagement.Show();
         }
 
         private void reqBtn_Click(object sender, EventArgs e)
         {
-            FrmViewReq frmViewReq = new FrmViewReq();
+            this.Close();
+            FrmViewReq frmViewReq = new FrmViewReq(loginId);
             frmViewReq.Show();
         }
 

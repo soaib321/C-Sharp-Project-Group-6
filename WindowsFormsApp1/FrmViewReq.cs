@@ -14,9 +14,11 @@ namespace WindowsFormsApp1
     public partial class FrmViewReq : Form
     {
         string connectionString = "data source=SOAIBS-LAPTOP\\SQLEXPRESS; database=Project; integrated security=SSPI";
-        public FrmViewReq()
+        int lid;
+        public FrmViewReq(int lid)
         {
             InitializeComponent();
+            this.lid = lid;
             LoadAllRequests();
         }
         private void LoadAllRequests(string filter = "")
@@ -61,6 +63,14 @@ namespace WindowsFormsApp1
         {
             textBox1.Clear();
             LoadAllRequests();
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmAdminDashboard adminDashboard = new FrmAdminDashboard(lid);
+            adminDashboard.Show();
+
         }
     }
 }

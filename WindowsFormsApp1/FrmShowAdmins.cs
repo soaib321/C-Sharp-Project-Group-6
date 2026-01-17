@@ -38,5 +38,11 @@ namespace WindowsFormsApp1
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

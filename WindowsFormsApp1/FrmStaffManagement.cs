@@ -15,7 +15,8 @@ namespace WindowsFormsApp1
     public partial class FrmStaffManagement : Form
     {
         string connectionString = "data source=SOAIBS-LAPTOP\\SQLEXPRESS; database=Project; integrated security=SSPI";
-        public FrmStaffManagement()
+        int lid;
+        public FrmStaffManagement(int lid)
         {
             InitializeComponent();
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -23,6 +24,7 @@ namespace WindowsFormsApp1
             dataGridView1.ReadOnly = true;
             string query = "SELECT * FROM [Staff]";
             FillDataGridView(query);
+            this.lid = lid;
         }
         private void FillDataGridView(string query)
         {
@@ -169,6 +171,22 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Database Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmAdminDashboard adminDashboard = new FrmAdminDashboard(lid);
+            adminDashboard.Show();
+
+        }
+
+        private void clrBtn_Click(object sender, EventArgs e)
+        {
+            
+            ClearFields();
+            txtName.Focus();
 
         }
     }

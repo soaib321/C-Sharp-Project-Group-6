@@ -14,12 +14,14 @@ namespace WindowsFormsApp1
     public partial class FrmServices : Form
     {
         string connectionString = "data source=SOAIBS-LAPTOP\\SQLEXPRESS; database=Project; integrated security=SSPI";
-        public FrmServices()
+        int loginId;
+        public FrmServices(int loginId)
         {
             InitializeComponent();
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
             dataGridView1.ReadOnly = true;
+            this.loginId = loginId;
             LoadServices();
         }
         private void LoadServices()
@@ -148,6 +150,9 @@ namespace WindowsFormsApp1
 
         private void backBtn_Click(object sender, EventArgs e)
         {
+            this.Close();
+            FrmAdminDashboard frmAdminDashboard = new FrmAdminDashboard(loginId);
+            frmAdminDashboard.Show();
 
         }
 

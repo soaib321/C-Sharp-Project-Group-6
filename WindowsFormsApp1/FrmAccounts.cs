@@ -14,9 +14,11 @@ namespace WindowsFormsApp1
     public partial class FrmAccounts : Form
     {
         string connectionString = "data source=SOAIBS-LAPTOP\\SQLEXPRESS; database=Project; integrated security=SSPI";
-        public FrmAccounts()
+        int aid;
+        public FrmAccounts(int id)
         {
             InitializeComponent();
+            aid = id;
             LoadData();
         }
         private void LoadData()
@@ -32,19 +34,54 @@ namespace WindowsFormsApp1
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                string query = "INSERT INTO Login (Loginid, Username, Password, Role) VALUES (@id, @user, @pass, @role)";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@id", txtLoginId.Text); // Replace with your actual TextBox names
-                cmd.Parameters.AddWithValue("@user", txtUsername.Text);
-                cmd.Parameters.AddWithValue("@pass", txtPassword.Text);
-                cmd.Parameters.AddWithValue("@role", cmbRole.Text);
+            // --- 1. INPUT VALIDATION ---
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Account Added Successfully");
-                LoadData();
+            // Check for empty strings or whitespace
+            if (string.IsNullOrWhiteSpace(txtUsername.Text) ||
+                string.IsNullOrWhiteSpace(txtPassword.Text) ||
+                string.IsNullOrWhiteSpace(cmbRole.Text))
+            {
+                MessageBox.Show("Please fill in Username, Password, and Role.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Example of specific validation: Username length
+            if (txtUsername.Text.Length < 3)
+            {
+                MessageBox.Show("Username must be at least 3 characters long.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // --- 2. DATABASE EXECUTION ---
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    // NOTICE: Loginid is removed from the query because it is an IDENTITY column
+                    string query = "INSERT INTO Login (Username, Password, Role) VALUES (@user, @pass, @role)";
+
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@user", txtUsername.Text.Trim());
+                    cmd.Parameters.AddWithValue("@pass", txtPassword.Text);
+                    cmd.Parameters.AddWithValue("@role", cmbRole.Text);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Refresh UI
+                    LoadData();
+                    clrBtn_Click(sender, e);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Database Error: " + ex.Message, "SQL Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An unexpected error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -97,56 +134,83 @@ namespace WindowsFormsApp1
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            // Ensure a user is selected before attempting deletion
-            if (string.IsNullOrEmpty(txtLoginId.Text))
+            if (string.IsNullOrWhiteSpace(txtLoginId.Text))
             {
-                MessageBox.Show("Please select a user to delete.");
+                MessageBox.Show("Please select a user to delete.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Confirmation dialog to prevent accidental deletion
-            DialogResult result = MessageBox.Show("Are you sure you want to delete this account? This will also remove them from the Admin records.", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-            if (result == DialogResult.Yes)
+            // 2. Data Type Validation: Ensure it's a valid number
+            if (!int.TryParse(txtLoginId.Text, out int loginId))
             {
-                using (SqlConnection con = new SqlConnection(connectionString))
+                MessageBox.Show("Invalid Login ID format. Please select a valid record.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // --- 3. DATABASE EXISTENCE CHECK ---
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
                 {
                     con.Open();
-                    SqlTransaction transaction = con.BeginTransaction();
+                    string checkQuery = "SELECT COUNT(*) FROM Login WHERE Loginid = @id";
+                    SqlCommand checkCmd = new SqlCommand(checkQuery, con);
+                    checkCmd.Parameters.AddWithValue("@id", loginId);
 
-                    try
+                    int count = (int)checkCmd.ExecuteScalar();
+
+                    if (count == 0)
                     {
-                        // 1. Delete from Admin table first (to handle potential foreign key constraints)
-                        string deleteAdminQuery = "DELETE FROM Admin WHERE LoginId = @id";
-                        SqlCommand adminCmd = new SqlCommand(deleteAdminQuery, con, transaction);
-                        adminCmd.Parameters.AddWithValue("@id", txtLoginId.Text);
-                        adminCmd.ExecuteNonQuery();
-
-                        // 2. Delete from Login table
-                        string deleteLoginQuery = "DELETE FROM Login WHERE Loginid = @id";
-                        SqlCommand loginCmd = new SqlCommand(deleteLoginQuery, con, transaction);
-                        loginCmd.Parameters.AddWithValue("@id", txtLoginId.Text);
-                        loginCmd.ExecuteNonQuery();
-
-                        // Commit both deletions
-                        transaction.Commit();
-
-                        MessageBox.Show("Account and associated Admin records deleted successfully.");
-
-                        // Clear textboxes after deletion
-                        txtLoginId.Clear();
-                        txtUsername.Clear();
-                        txtPassword.Clear();
-                        cmbRole.SelectedIndex = -1;
-
-                        LoadData(); // Refresh the DataGridView
+                        MessageBox.Show("This account no longer exists in the database.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadData(); // Refresh grid to show actual data
+                        clrBtn_Click(sender, e);
+                        return;
                     }
-                    catch (Exception ex)
+
+                    // --- 4. CONFIRMATION & DELETION LOGIC ---
+                    string confirmMessage = "Are you sure you want to delete this account?";
+                    if (cmbRole.Text.Trim().Equals("Admin", StringComparison.OrdinalIgnoreCase))
                     {
-                        // If any part fails, roll back both deletions
-                        transaction.Rollback();
-                        MessageBox.Show("Error during deletion: " + ex.Message);
+                        confirmMessage += " This will also remove them from the Admin records.";
                     }
+
+                    DialogResult result = MessageBox.Show(confirmMessage, "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        SqlTransaction transaction = con.BeginTransaction();
+                        try
+                        {
+                            // Delete from Admin table first
+                            string deleteAdminQuery = "DELETE FROM Admin WHERE LoginId = @id";
+                            SqlCommand adminCmd = new SqlCommand(deleteAdminQuery, con, transaction);
+                            adminCmd.Parameters.AddWithValue("@id", loginId);
+                            adminCmd.ExecuteNonQuery();
+
+                            // Delete from Login table
+                            string deleteLoginQuery = "DELETE FROM Login WHERE Loginid = @id";
+                            SqlCommand loginCmd = new SqlCommand(deleteLoginQuery, con, transaction);
+                            loginCmd.Parameters.AddWithValue("@id", loginId);
+                            loginCmd.ExecuteNonQuery();
+
+                            transaction.Commit();
+
+                            MessageBox.Show("Account deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            // Clean up UI
+                            clrBtn_Click(sender, e);
+                            LoadData();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            MessageBox.Show("Error during deletion: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Database connection error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -204,6 +268,26 @@ namespace WindowsFormsApp1
                 cmbRole.Text = row.Cells["Role"].Value.ToString();
             }
 
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FrmAdminDashboard f = new FrmAdminDashboard(aid);
+            f.Show();
+
+
+        }
+
+        private void clrBtn_Click(object sender, EventArgs e)
+        {
+            txtLoginId.Clear();
+            txtUsername.Clear();
+            txtPassword.Clear();
+            cmbRole.SelectedIndex = -1; // Deselects any selected item in the dropdown
+
+            // Optional: Return focus to the first textbox
+            txtLoginId.Focus();
         }
     }
 }
