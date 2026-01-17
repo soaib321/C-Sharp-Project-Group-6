@@ -104,7 +104,7 @@
             // txtStaffId
             // 
             this.txtStaffId.Location = new System.Drawing.Point(95, 124);
-            this.txtStaffId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStaffId.Margin = new System.Windows.Forms.Padding(2);
             this.txtStaffId.Name = "txtStaffId";
             this.txtStaffId.Size = new System.Drawing.Size(127, 20);
             this.txtStaffId.TabIndex = 5;
@@ -112,7 +112,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(95, 162);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(127, 20);
             this.txtName.TabIndex = 6;
@@ -120,7 +120,7 @@
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(95, 253);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(127, 20);
             this.txtPhone.TabIndex = 7;
@@ -128,7 +128,7 @@
             // txtLoginId
             // 
             this.txtLoginId.Location = new System.Drawing.Point(95, 293);
-            this.txtLoginId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLoginId.Margin = new System.Windows.Forms.Padding(2);
             this.txtLoginId.Name = "txtLoginId";
             this.txtLoginId.Size = new System.Drawing.Size(127, 20);
             this.txtLoginId.TabIndex = 8;
@@ -137,7 +137,7 @@
             // 
             this.cmbStaffType.FormattingEnabled = true;
             this.cmbStaffType.Location = new System.Drawing.Point(95, 210);
-            this.cmbStaffType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbStaffType.Margin = new System.Windows.Forms.Padding(2);
             this.cmbStaffType.Name = "cmbStaffType";
             this.cmbStaffType.Size = new System.Drawing.Size(82, 21);
             this.cmbStaffType.TabIndex = 9;
@@ -146,7 +146,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(256, 1);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -156,8 +156,8 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(31, 394);
-            this.updateBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateBtn.Location = new System.Drawing.Point(46, 394);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(2);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(63, 31);
             this.updateBtn.TabIndex = 11;
@@ -182,7 +182,7 @@
             "Deactive",
             "Active"});
             this.cmbStatus.Location = new System.Drawing.Point(95, 329);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(82, 21);
             this.cmbStatus.TabIndex = 13;
@@ -190,7 +190,7 @@
             // deleteBtn
             // 
             this.deleteBtn.Location = new System.Drawing.Point(133, 394);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(63, 31);
             this.deleteBtn.TabIndex = 14;
@@ -249,7 +249,7 @@
             this.ClientSize = new System.Drawing.Size(819, 459);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmStaffManagement";
             this.Text = "FrmStaffManagement";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

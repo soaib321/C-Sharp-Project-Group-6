@@ -102,7 +102,7 @@
             // txtUserId
             // 
             this.txtUserId.Location = new System.Drawing.Point(80, 137);
-            this.txtUserId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUserId.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserId.Name = "txtUserId";
             this.txtUserId.Size = new System.Drawing.Size(129, 20);
             this.txtUserId.TabIndex = 5;
@@ -110,7 +110,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(80, 184);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(129, 20);
             this.txtName.TabIndex = 6;
@@ -118,7 +118,7 @@
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(80, 240);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(129, 20);
             this.txtPhone.TabIndex = 7;
@@ -126,7 +126,7 @@
             // txtLoginId
             // 
             this.txtLoginId.Location = new System.Drawing.Point(80, 373);
-            this.txtLoginId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLoginId.Margin = new System.Windows.Forms.Padding(2);
             this.txtLoginId.Name = "txtLoginId";
             this.txtLoginId.Size = new System.Drawing.Size(129, 20);
             this.txtLoginId.TabIndex = 8;
@@ -134,7 +134,7 @@
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(80, 278);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(129, 63);
             this.txtAddress.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(264, 3);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -154,10 +154,10 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(29, 431);
-            this.updateBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateBtn.Location = new System.Drawing.Point(30, 431);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(2);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(76, 41);
+            this.updateBtn.Size = new System.Drawing.Size(86, 41);
             this.updateBtn.TabIndex = 11;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
@@ -165,10 +165,10 @@
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(131, 431);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteBtn.Location = new System.Drawing.Point(129, 431);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(76, 41);
+            this.deleteBtn.Size = new System.Drawing.Size(89, 41);
             this.deleteBtn.TabIndex = 12;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(60, 77);
+            this.label6.Location = new System.Drawing.Point(63, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 25);
             this.label6.TabIndex = 14;
@@ -210,7 +210,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.manage_user_icon1;
-            this.pictureBox1.Location = new System.Drawing.Point(91, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,7 +224,7 @@
             this.ClientSize = new System.Drawing.Size(917, 501);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmUserManagement";
             this.Text = "FrmUserManagementcs";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

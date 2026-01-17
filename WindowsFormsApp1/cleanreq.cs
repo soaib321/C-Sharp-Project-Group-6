@@ -119,5 +119,10 @@ namespace WindowsFormsApp1
             // Prevent the user from typing in it
             textBox1.ReadOnly = true;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

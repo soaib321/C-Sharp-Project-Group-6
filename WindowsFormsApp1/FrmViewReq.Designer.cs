@@ -39,7 +39,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(31, 92);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -49,7 +49,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(31, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(190, 20);
             this.textBox1.TabIndex = 1;
@@ -57,7 +57,7 @@
             // searchBtn
             // 
             this.searchBtn.Location = new System.Drawing.Point(235, 36);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(2);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(153, 24);
             this.searchBtn.TabIndex = 2;
@@ -68,7 +68,7 @@
             // refreshBtn
             // 
             this.refreshBtn.Location = new System.Drawing.Point(392, 36);
-            this.refreshBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.refreshBtn.Margin = new System.Windows.Forms.Padding(2);
             this.refreshBtn.Name = "refreshBtn";
             this.refreshBtn.Size = new System.Drawing.Size(169, 24);
             this.refreshBtn.TabIndex = 3;
@@ -80,13 +80,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.refreshBtn);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmViewReq";
             this.Text = "FrmViewReq";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
