@@ -329,5 +329,62 @@
   <ItemGroup>
     <None Include="Resources\pass change background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean request icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean request image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pres request image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pres icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Staff Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\role user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waste request image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waste request icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waste request icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house clean icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task accept icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go back.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

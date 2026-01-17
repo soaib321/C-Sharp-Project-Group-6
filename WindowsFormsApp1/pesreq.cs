@@ -119,5 +119,10 @@ namespace WindowsFormsApp1
             // Prevent the user from typing in it
             textBox2.ReadOnly = true;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
