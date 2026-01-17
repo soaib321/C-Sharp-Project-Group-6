@@ -7,7 +7,7 @@ namespace WindowsFormsApp1
 {
     public partial class staffdashboard : Form
     {
-        private readonly string cs = @"Data Source=DESKTOP-T8U90K3\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True";
+        private readonly string cs = "Data Source=SOAIBS-LAPTOP\\SQLEXPRESS;Initial Catalog=Project;Integrated Security=SSPI";
 
         private int loggedInStaffId;
         private int loginId;

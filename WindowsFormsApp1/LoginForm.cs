@@ -76,7 +76,13 @@ namespace WindowsFormsApp1
                         else if (role == "Staff" && status != "Active")
                         {
                             MessageBox.Show("This account is not verified yet.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            
                             return; // Stop the login process here
+                        }
+                        else if (role == "Staff" && status == "Active")
+                        {
+                            staffdashboard staffDash = new staffdashboard(loginId);
+                            staffDash.Show();
                         }
                         else if (role == "User")
                         {
