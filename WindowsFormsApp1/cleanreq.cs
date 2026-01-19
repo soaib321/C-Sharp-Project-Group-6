@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("All fields must be filled out.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            string query = "INSERT INTO [C_Req] (C_Type,Status,C_Date,UserId, ServiceID) VALUES (@C_Type, @Status, @C_Date,@UserId, @ServiceID)";
+            string query = "INSERT INTO [C_Req] (C_Type,Status,C_Date,UserId) VALUES (@C_Type, @Status, @C_Date,@UserId)";
             
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
                     command.Parameters.AddWithValue("@Status", status);
                     command.Parameters.AddWithValue("@C_Date", reqd);
                     command.Parameters.AddWithValue("@UserId", this.userId);
-                    command.Parameters.AddWithValue("@ServiceID", this.serviceId);
+                    //command.Parameters.AddWithValue("@ServiceID", this.serviceId);
                     
 
                     connection.Open();
