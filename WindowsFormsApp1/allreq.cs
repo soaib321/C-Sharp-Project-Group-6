@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class allreq : Form
     {
-        private SqlConnection con = new SqlConnection("data source=DESKTOP-T8U90K3\\SQLEXPRESS; database=Project; integrated security=SSPI");
+        private SqlConnection con = new SqlConnection("data source=SOAIBS-LAPTOP\\SQLEXPRESS; database=Project; integrated security=SSPI");
         private int loggedInUserId;
 
         public allreq()
