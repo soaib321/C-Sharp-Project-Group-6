@@ -88,46 +88,53 @@ namespace WindowsFormsApp1
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtLoginId.Text))
+            // 1. Validation: Ensure a record is selected (LoginId is present)
+            if (string.IsNullOrWhiteSpace(txtLoginId.Text))
             {
-                MessageBox.Show("Please select a user to promote.");
+                MessageBox.Show("Please select an account from the list to update.", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            // 2. Validation: Ensure fields aren't empty
+            if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                con.Open();
-                // A transaction ensures both tables update or neither does
-                SqlTransaction transaction = con.BeginTransaction();
+                MessageBox.Show("Username and Password cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-                try
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    // 1. Update the Role in dbo.Login to 'Admin'
-                    string updateQuery = "UPDATE Login SET Role = 'Admin' WHERE Loginid = @id";
-                    SqlCommand updateCmd = new SqlCommand(updateQuery, con, transaction);
-                    updateCmd.Parameters.AddWithValue("@id", txtLoginId.Text);
-                    updateCmd.ExecuteNonQuery();
+                    // Standard UPDATE query to modify existing record details
+                    string query = "UPDATE Login SET Username = @user, Password = @pass, Role = @role WHERE Loginid = @id";
 
-                    // 2. Insert into dbo.Admin
-                    // We omit AdminId because it is now an Auto-Increment Identity column
-                    string insertQuery = "INSERT INTO Admin (Name, LoginId) VALUES (@name, @loginId)";
-                    SqlCommand insertCmd = new SqlCommand(insertQuery, con, transaction);
-                    insertCmd.Parameters.AddWithValue("@name", txtUsername.Text); // From your Username textbox
-                    insertCmd.Parameters.AddWithValue("@loginId", txtLoginId.Text); // Linking the two tables
-                    insertCmd.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@user", txtUsername.Text.Trim());
+                    cmd.Parameters.AddWithValue("@pass", txtPassword.Text);
+                    cmd.Parameters.AddWithValue("@role", cmbRole.Text);
+                    cmd.Parameters.AddWithValue("@id", txtLoginId.Text);
 
-                    // Commit changes if both commands succeed
-                    transaction.Commit();
-                    MessageBox.Show("User successfully promoted to Admin!");
+                    con.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
 
-                    LoadData(); // Refresh your DataGridView to show the new Role
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Account updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Refresh UI
+                        LoadData();
+                        clrBtn_Click(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update failed. The record might have been deleted.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    // Rollback changes if an error occurs (e.g., database connection lost)
-                    transaction.Rollback();
-                    MessageBox.Show("Error during promotion: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
